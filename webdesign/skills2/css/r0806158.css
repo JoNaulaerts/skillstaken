@@ -17,11 +17,25 @@ a:visited {
 }
 
 a:hover {
-    background-color: #000;
+    background-color: black;
     color: #fff;
 }
 
 a:active {
     background-color: inherit;
     color: blue;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    flex: 1 1 100%;
+    display: flex;
+}
+
+nav a {
+    flex: 1 1 100%;
 }
