@@ -6,14 +6,20 @@ body {
     color: black;
 }
 
+a {
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+}
+
 a:link {
     background-color: inherit;
-    color: red;
+    color: black;
 }
 
 a:visited {
     background-color: inherit;
-    color: green;
+    color: black;
 }
 
 a:hover {
@@ -22,8 +28,8 @@ a:hover {
 }
 
 a:active {
-    background-color: inherit;
-    color: blue;
+    background-color: white;
+    color: dimgrey;
 }
 
 nav ul {
