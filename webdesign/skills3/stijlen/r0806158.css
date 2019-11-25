@@ -1,47 +1,77 @@
-/*basisstijl*/
+@media screen and (min-width: 500px) {
+    .goedkoop {
+        display: block;
+    }
 
-body {
-    font-family: tahoma, sans-serif;
-    background-color: lightcyan;
-    color: black;
+    .jong {
+        display: none;
+    }
+
+    .luxe {
+        display: none;
+    }
+
+    .basis {
+        display: block;
+    }
+
+    .medium {
+        display: none;
+    }
+
+    .groot {
+        display: none;
+    }
 }
 
-a {
-    border-color: black;
-    border-style: solid;
-    border-width: 3px;
+@media screen and (min-width: 700px) {
+    .goedkoop {
+        display: none;
+    }
+
+    .jong {
+        display: block;
+    }
+
+    .luxe {
+        display: none;
+    }
+
+    .basis {
+        display: none;
+    }
+
+    .medium {
+        display: block;
+    }
+
+    .groot {
+        display: none;
+    }
 }
 
-a:link {
-    background-color: inherit;
-    color: black;
-}
+@media screen and (min-width: 900px) {
+    .goedkoop {
+        display: none;
+    }
 
-a:visited {
-    background-color: inherit;
-    color: black;
-}
+    .jong {
+        display: none;
+    }
 
-a:hover {
-    background-color: black;
-    color: #fff;
-}
+    .luxe {
+        display: block;
+    }
 
-a:active {
-    background-color: white;
-    color: dimgrey;
-}
+    .basis {
+        display: none;
+    }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
+    .medium {
+        display: none;
+    }
 
-nav li {
-    flex: 1 1 100%;
-    display: flex;
-}
-
-nav a {
-    flex: 1 1 100%;
+    .groot {
+        display: block;
+    }
 }
