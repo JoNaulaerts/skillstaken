@@ -3,9 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../skills3/stijlen/bootstrap-grid.css">
-    <link rel="stylesheet" href="../skills3/stijlen/r0806158.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Skills 3</title>
 </head>
 
@@ -71,7 +68,7 @@
             </div>
         </article>
         <footer>
-            <div>&copy; Jo Naulaerts - 2019</div>
+            <div>&copy; voornaam naam - 2019</div>
         </footer>
 
     </div>
