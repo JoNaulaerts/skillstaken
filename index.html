@@ -7,42 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stijl.css">
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist">
     <meta name="author" content="Jo Naulaerts">
 </head>
 
 <body>
-    <div id="container">
-        <header>
-            <h1>Welkom op mijn webruimte!</h1>
-            <nav>
-                <h2>Mijn projecten</h2>
-                <ul>
-                    <li>Webdesign essentials
-                        <ul>
-                            <li><a href="webdesign/skills2/r0806158skills2.html">Skillstaak 2</a></li>
-                            <li><a href="webdesign/skills3/r0806158skills3.html">Skillstaak 3</a></li>
-                        </ul>
-                    </li>
-                    <li>Webdesign met HTML5
-                        <ul>
-                            <li><a href="#">Uitdaging 1</a></li>
-                            <li><a href="#">Uitdaging 2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <article>
-            <h2>Wie ben ik?</h2>
-            <p>Mijn naam is Jo Naulaerts. Ik studeer toegepaste informatica aan de Thomas More in Geel. Mijn hobby's zijn: zeescouts, turnen, tekenen en muziek. Voor de rest ben ik graag in de natuur om te kamperen of om te wandelen.</p>
+<ul class="nachtmodus">
+    <li class="nachtmodus">
+        <span class="nachtmodus">donker</span>
+        <span class="nachtmodus">licht</span>
+    </li>
+</ul>
+<!--<section class="helePagina">-->
+    <!--    <div id="container">-->
+    <header class="header">
+        <a href="/" class="logo">corp</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="webdesign/skills2/r0806158skills2.html">Skillstaak 2</a></li>
+            <li><a href="webdesign/skills3/r0806158skills3.html">Skillstaak 3</a></li>
+            <li><a href="#">Uitdaging 1</a></li>
+            <li><a href="#">Uitdaging 2</a></li>
 
-        </article>
-        <footer>
-            <a href="http://www.thomasmore.be/">Thomas More</a> &copy; IT Factory = <a href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/">Toegepaste informatica</a> + <a href="https://www.facebook.com/ElektronicaICT.ThomasMoreBE/">Elektronica-ICT</a>
+        </ul>
 
-        </footer>
-    </div>
+    </header>
+    <!--    <header>-->
+    <!--        <h1>Welkom op mijn webruimte!</h1>-->
+    <!--        <nav>-->
+    <!--            <h2>Mijn projecten</h2>-->
+    <!--            <ul>-->
+    <!--                <li>Webdesign essentials-->
+    <!--                    <ul>-->
+    <!--                        <li><a href="webdesign/skills2/r0806158skills2.html">Skillstaak 2</a></li>-->
+    <!--                        <li><a href="webdesign/skills3/r0806158skills3.html">Skillstaak 3</a></li>-->
+    <!--                    </ul>-->
+    <!--                </li>-->
+    <!--                <li>Webdesign met HTML5-->
+    <!--                    <ul>-->
+    <!--                        <li><a href="#">Uitdaging 1</a></li>-->
+    <!--                        <li><a href="#">Uitdaging 2</a></li>-->
+    <!--                    </ul>-->
+    <!--                </li>-->
+    <!--            </ul>-->
+    <!--        </nav>-->
+    <!--    </header>-->
+    <article>
+        <h2>Wie ben ik?</h2>
+        <p>Mijn naam is Jo Naulaerts. Ik studeer toegepaste informatica aan de Thomas More in Geel. Mijn hobby's zijn:
+            zeescouts, turnen, tekenen en muziek. Voor de rest ben ik graag in de natuur om te kamperen of om te
+            wandelen.</p>
 
+    </article>
+    <footer>
+        <a href="http://www.thomasmore.be/">Thomas More</a> &copy; IT Factory = <a
+            href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/">Toegepaste informatica</a> + <a
+            href="https://www.facebook.com/ElektronicaICT.ThomasMoreBE/">Elektronica-ICT</a>
+
+    </footer>
+<!--    &lt;!&ndash;    </div>&ndash;&gt;</section>-->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("ul.nachtmodus").click(function () {
+            $("ul").toggleClass("active")
+            $("body").toggleClass("dark")
+            $("div").toggleClass("dark")
+            $("h1").toggleClass("dark")
+            $("section").toggleClass("dark")
+        })
+    })
+</script>
 </body>
 
 </html>

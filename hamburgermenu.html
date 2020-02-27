@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="stijl-hamburgermenu.css">
+    <link rel="stylesheet" href="stijl-nachtmodus-hamburgermenu.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono&display=swap" rel="stylesheet">
+    <meta name="author" content="Jo Naulaerts">
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo">Jo Naulaerts</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn">
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+    <ul class="menu">
+        <li><a href="webdesign/skills2/r0806158skills2.html">Skillstaak 2</a></li>
+        <li><a href="webdesign/skills3/r0806158skills3.html">Skillstaak 3</a></li>
+        <li><a href="#">Uitdaging 1</a></li>
+        <li><a href="#">Uitdaging 2</a></li>
+
+    </ul>
+</header>
+<div class="nachtmodus">
+    <ul>
+        <li>
+            <span>donker</span>
+            <span>licht</span>
+        </li>
+    </ul>
+</div>
+<div class="paginainhoud">
+    <h1>Welkom op mijn webruimte!</h1>
+    <article>
+        <h2>Wie ben ik?</h2>
+        <p>Mijn naam is Jo Naulaerts. Ik studeer toegepaste informatica aan de Thomas More in Geel. Mijn hobby's zijn:
+            zeescouts, turnen, tekenen en muziek. Voor de rest ben ik graag in de natuur om te kamperen of om te
+            wandelen.</p>
+
+    </article>
+    <section class="fotos">
+        <div class="row fotolinks">
+            <div class="col-xs-12 col-lg-5"><img src="images/image002.jpg" alt="foto zeescouts" height="250px" width="250px"></div>
+            <p class="col-xs-12 col-lg-5">Al sinds het tweede leerjaar zit ik bij de zeescouts. Elke zaterdagnamiddag
+                leef ik mij uit met technieken leren, zeilen, roeien, een bosspel en nog veel meer. Samen met mijn
+                kameraden maak ik elke keer weer plezier.</p>
+        </div>
+        <div class="row fotorechts">
+            <div class="col-xs-12 col-lg-5"><img src="images/image004.jpg" alt="turnen" height="250px" width="250px">
+            </div>
+            <p class="col-xs-12 col-lg-5">Ook bij mijn turnclub voel ik me goed. Elke week turn ik ongeveer twee uur, zo
+                heb ik ook mijn sportmoment in de week. De turnoefeningen gaan van koprol tot flik-flak tot
+                reuzenzwaai.</p>
+        </div>
+        <div class="row fotolinks">
+            <div class="col-xs-12 col-lg-5"><img src="images/image003.jpg" alt="kleurpotloden" height="250px"
+                                                 width="250px"></div>
+            <p class="col-xs-12 col-lg-5">In de kunstacademie heb ik ondertussen negen jaar mijn artistieke geest de
+                vrije loop gelaten. Hier heb ik verschillende potloodtechnieken en schilgertechnieken geleerd. Ook
+                leerde ik er klei boetseren en andere ruimtelijke technieken gebruiken.</p>
+        </div>
+        <div class="row fotorechts">
+            <div class="col-xs-12 col-lg-5"><img src="images/image001.jpg" alt="klavecimbel" height="250px"
+                                                 width="250px"></div>
+            <p class="col-xs-12 col-lg-5">Bij de klavecimbelles leerde ik niet alleen noten spelen, maar ook muziek
+                maken. Door kleine frazeringen en een nauwgezette articulatie kan je een stuk echt tot leven
+                brengen. </p>
+        </div>
+        <div class="row fotolinks">
+            <div class="col-xs-12 col-lg-5"><img src="images/image005.jpg" alt="natuur" height="250px" width="250px">
+            </div>
+            <p class="col-xs-12 col-lg-5">Tot slot kom ik graag in de natuur. Hier kan ik even ontsnappen aan de
+                dagelijkse dosis stress. Dit is voor mij een manier om tot rust te komen.</p>
+        </div>
+
+    </section>
+    <footer>
+        <a href="http://www.thomasmore.be/">Thomas More</a> &copy; IT Factory = <a
+            href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/">Toegepaste informatica</a> + <a
+            href="https://www.facebook.com/ElektronicaICT.ThomasMoreBE/">Elektronica-ICT</a>
+
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $('div.nachtmodus ul').click(function () {
+            $('div.nachtmodus ul').toggleClass('active')
+            $('body').toggleClass('dark')
+            $('header.header').toggleClass('dark')
+            $('header.header ul').toggleClass('dark')
+            $('header.header ul a').toggleClass('dark')
+            $('header.header ul a:hover').toggleClass('dark')
+            $('footer a').toggleClass('dark')
+        })
+    })
+</script>
+</body>
+</html>
