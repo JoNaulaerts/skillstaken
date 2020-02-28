@@ -80,6 +80,7 @@ div.nachtmodus ul li span:nth-child(1) {
 footer a {
     color: #000;
     background-color: #E1E8ED;
+    text-decoration: underline;
     transition: 0.5s;
 }
 
@@ -230,7 +231,7 @@ a {
     top: 0;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 781px) {
     .header li {
         float: left;
     }
